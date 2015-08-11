@@ -1,6 +1,6 @@
 using System;
 
-namespace RPiAqua.Console
+namespace RPiAqua.ConsoleApp
 {
 	class MainClass
 	{
