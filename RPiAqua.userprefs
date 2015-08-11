@@ -1,0 +1,14 @@
+﻿<Properties>
+  <MonoDevelop.Ide.Workspace ActiveConfiguration="Debug|x86" />
+  <MonoDevelop.Ide.Workbench ActiveDocument="RPiAqua.Libary/Display.cs">
+    <Files>
+      <File FileName="RPiAqua.Libary/AssemblyInfo.cs" Line="20" Column="39" />
+      <File FileName="RPiAqua/RPiAqua.Console/AssemblyInfo.cs" Line="20" Column="36" />
+      <File FileName="RPiAqua.Libary/Display.cs" Line="7" Column="20" />
+    </Files>
+  </MonoDevelop.Ide.Workbench>
+  <MonoDevelop.Ide.DebuggingService.Breakpoints>
+    <BreakpointStore />
+  </MonoDevelop.Ide.DebuggingService.Breakpoints>
+  <MonoDevelop.Ide.DebuggingService.PinnedWatches />
+</Properties>
