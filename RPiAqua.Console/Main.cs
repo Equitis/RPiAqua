@@ -1,5 +1,6 @@
 using System;
 using RPiAqua.Libary;
+using System.Collections.Generic;
 
 namespace RPiAqua.ConsoleApp
 {
@@ -19,9 +20,16 @@ namespace RPiAqua.ConsoleApp
 			//System.Threading.Thread.Sleep(5000);
 			//display.ClearDisplay();
 
-			HCSR04 hcsr = new HCSR04(2000);
+			//HCSR04 hcsr = new HCSR04(2000);
 
-			//DTH dth = new DTH();
+			DTH dth = new DTH();
+
+			BMP085 bmp = new BMP085();
+
+			Dictionary<string, double> values = bmp.GetValues();
+			Console.WriteLine(values["Temp"].ToString());
+			Console.WriteLine(values["Bar"].ToString());
+			Console.WriteLine(values["Meter"].ToString());
 		}
 	}
 }

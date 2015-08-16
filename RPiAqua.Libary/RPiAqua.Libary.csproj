@@ -56,10 +56,12 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AssemblyInfo.cs" />
+    <Compile Include="BMP085.cs" />
     <Compile Include="Display.cs" />
     <Compile Include="DS18B20.cs" />
     <Compile Include="DTH.cs" />
     <Compile Include="HCSR04.cs" />
+    <Compile Include="StdResult.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="packages.config" />
