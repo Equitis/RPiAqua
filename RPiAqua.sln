@@ -1,32 +1,89 @@
 ﻿
-Microsoft Visual Studio Solution File, Format Version 11.00
-# Visual Studio 2010
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPiAqua.Console", "RPiAqua\RPiAqua.Console\RPiAqua.Console.csproj", "{20539A20-6CDA-4CB2-8AE8-42350975C4B7}"
-EndProject
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPiAqua.Libary", "RPiAqua.Libary\RPiAqua.Libary.csproj", "{ED02343C-37A4-478C-B7B9-DCE82BFB8477}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPiAqua.DB", "RPiAqua.DB\RPiAqua.DB.csproj", "{23DA64DB-83FC-4EF1-A19B-A5D42E239BE3}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPiAqua.ConsoleApp", "RPiAqua.Console\RPiAqua.ConsoleApp.csproj", "{20539A20-6CDA-4CB2-8AE8-42350975C4B7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RPiAqua.Main", "RPiAqua.Main\RPiAqua.Main.csproj", "{5DD61902-A195-4928-9E80-055A93748A40}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = ".nuget", ".nuget", "{33C6FE3E-2730-4A56-9C64-0A58E00A5CEE}"
+	ProjectSection(SolutionItems) = preProject
+		..\..\raspberry-sharp-io\.nuget\NuGet.Config = ..\..\raspberry-sharp-io\.nuget\NuGet.Config
+		..\..\raspberry-sharp-io\.nuget\NuGet.exe = ..\..\raspberry-sharp-io\.nuget\NuGet.exe
+		..\..\raspberry-sharp-io\.nuget\NuGet.targets = ..\..\raspberry-sharp-io\.nuget\NuGet.targets
+	EndProjectSection
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|Mixed Platforms = Debug|Mixed Platforms
 		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|Mixed Platforms = Release|Mixed Platforms
 		Release|x86 = Release|x86
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{20539A20-6CDA-4CB2-8AE8-42350975C4B7}.Debug|x86.ActiveCfg = Debug|x86
-		{20539A20-6CDA-4CB2-8AE8-42350975C4B7}.Debug|x86.Build.0 = Debug|x86
-		{20539A20-6CDA-4CB2-8AE8-42350975C4B7}.Release|x86.ActiveCfg = Release|x86
-		{20539A20-6CDA-4CB2-8AE8-42350975C4B7}.Release|x86.Build.0 = Release|x86
-		{23DA64DB-83FC-4EF1-A19B-A5D42E239BE3}.Debug|x86.ActiveCfg = Debug|Any CPU
-		{23DA64DB-83FC-4EF1-A19B-A5D42E239BE3}.Debug|x86.Build.0 = Debug|Any CPU
-		{23DA64DB-83FC-4EF1-A19B-A5D42E239BE3}.Release|x86.ActiveCfg = Release|Any CPU
-		{23DA64DB-83FC-4EF1-A19B-A5D42E239BE3}.Release|x86.Build.0 = Release|Any CPU
+		{ED02343C-37A4-478C-B7B9-DCE82BFB8477}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ED02343C-37A4-478C-B7B9-DCE82BFB8477}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ED02343C-37A4-478C-B7B9-DCE82BFB8477}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{ED02343C-37A4-478C-B7B9-DCE82BFB8477}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
 		{ED02343C-37A4-478C-B7B9-DCE82BFB8477}.Debug|x86.ActiveCfg = Debug|Any CPU
 		{ED02343C-37A4-478C-B7B9-DCE82BFB8477}.Debug|x86.Build.0 = Debug|Any CPU
+		{ED02343C-37A4-478C-B7B9-DCE82BFB8477}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ED02343C-37A4-478C-B7B9-DCE82BFB8477}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ED02343C-37A4-478C-B7B9-DCE82BFB8477}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{ED02343C-37A4-478C-B7B9-DCE82BFB8477}.Release|Mixed Platforms.Build.0 = Release|Any CPU
 		{ED02343C-37A4-478C-B7B9-DCE82BFB8477}.Release|x86.ActiveCfg = Release|Any CPU
 		{ED02343C-37A4-478C-B7B9-DCE82BFB8477}.Release|x86.Build.0 = Release|Any CPU
+		{23DA64DB-83FC-4EF1-A19B-A5D42E239BE3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{23DA64DB-83FC-4EF1-A19B-A5D42E239BE3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{23DA64DB-83FC-4EF1-A19B-A5D42E239BE3}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{23DA64DB-83FC-4EF1-A19B-A5D42E239BE3}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{23DA64DB-83FC-4EF1-A19B-A5D42E239BE3}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{23DA64DB-83FC-4EF1-A19B-A5D42E239BE3}.Debug|x86.Build.0 = Debug|Any CPU
+		{23DA64DB-83FC-4EF1-A19B-A5D42E239BE3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{23DA64DB-83FC-4EF1-A19B-A5D42E239BE3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{23DA64DB-83FC-4EF1-A19B-A5D42E239BE3}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{23DA64DB-83FC-4EF1-A19B-A5D42E239BE3}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{23DA64DB-83FC-4EF1-A19B-A5D42E239BE3}.Release|x86.ActiveCfg = Release|Any CPU
+		{23DA64DB-83FC-4EF1-A19B-A5D42E239BE3}.Release|x86.Build.0 = Release|Any CPU
+		{20539A20-6CDA-4CB2-8AE8-42350975C4B7}.Debug|Any CPU.ActiveCfg = Debug|x86
+		{20539A20-6CDA-4CB2-8AE8-42350975C4B7}.Debug|Mixed Platforms.ActiveCfg = Debug|x86
+		{20539A20-6CDA-4CB2-8AE8-42350975C4B7}.Debug|Mixed Platforms.Build.0 = Debug|x86
+		{20539A20-6CDA-4CB2-8AE8-42350975C4B7}.Debug|x86.ActiveCfg = Debug|x86
+		{20539A20-6CDA-4CB2-8AE8-42350975C4B7}.Debug|x86.Build.0 = Debug|x86
+		{20539A20-6CDA-4CB2-8AE8-42350975C4B7}.Release|Any CPU.ActiveCfg = Release|x86
+		{20539A20-6CDA-4CB2-8AE8-42350975C4B7}.Release|Mixed Platforms.ActiveCfg = Release|x86
+		{20539A20-6CDA-4CB2-8AE8-42350975C4B7}.Release|Mixed Platforms.Build.0 = Release|x86
+		{20539A20-6CDA-4CB2-8AE8-42350975C4B7}.Release|x86.ActiveCfg = Release|x86
+		{20539A20-6CDA-4CB2-8AE8-42350975C4B7}.Release|x86.Build.0 = Release|x86
+		{5DD61902-A195-4928-9E80-055A93748A40}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5DD61902-A195-4928-9E80-055A93748A40}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5DD61902-A195-4928-9E80-055A93748A40}.Debug|Mixed Platforms.ActiveCfg = Debug|Any CPU
+		{5DD61902-A195-4928-9E80-055A93748A40}.Debug|Mixed Platforms.Build.0 = Debug|Any CPU
+		{5DD61902-A195-4928-9E80-055A93748A40}.Debug|x86.ActiveCfg = Debug|Any CPU
+		{5DD61902-A195-4928-9E80-055A93748A40}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5DD61902-A195-4928-9E80-055A93748A40}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5DD61902-A195-4928-9E80-055A93748A40}.Release|Mixed Platforms.ActiveCfg = Release|Any CPU
+		{5DD61902-A195-4928-9E80-055A93748A40}.Release|Mixed Platforms.Build.0 = Release|Any CPU
+		{5DD61902-A195-4928-9E80-055A93748A40}.Release|x86.ActiveCfg = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
 		StartupItem = RPiAqua\RPiAqua.Console\RPiAqua.Console.csproj
+	EndGlobalSection
+	GlobalSection(MonoDevelopProperties) = preSolution
+		StartupItem = Raspberry.IO.GeneralPurpose\Raspberry.IO.GeneralPurpose.csproj
+		Policies = $0
+		$0.TextStylePolicy = $1
+		$1.FileWidth = 120
+		$1.TabsToSpaces = False
+		$1.inheritsSet = VisualStudio
+		$1.inheritsScope = text/plain
 	EndGlobalSection
 EndGlobal

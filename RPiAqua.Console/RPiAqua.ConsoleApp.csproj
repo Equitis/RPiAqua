@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
@@ -7,7 +7,7 @@
     <SchemaVersion>2.0</SchemaVersion>
     <ProjectGuid>{20539A20-6CDA-4CB2-8AE8-42350975C4B7}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>RPiAqua.Console</RootNamespace>
+    <RootNamespace>RPiAqua.ConsoleApp</RootNamespace>
     <AssemblyName>RPiAqua.Console</AssemblyName>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
@@ -38,4 +38,14 @@
     <Compile Include="AssemblyInfo.cs" />
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\RPiAqua.DB\RPiAqua.DB.csproj">
+      <Project>{23DA64DB-83FC-4EF1-A19B-A5D42E239BE3}</Project>
+      <Name>RPiAqua.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RPiAqua.Libary\RPiAqua.Libary.csproj">
+      <Project>{ED02343C-37A4-478C-B7B9-DCE82BFB8477}</Project>
+      <Name>RPiAqua.Libary</Name>
+    </ProjectReference>
+  </ItemGroup>
 </Project>
