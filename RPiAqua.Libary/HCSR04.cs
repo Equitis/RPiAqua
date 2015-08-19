@@ -30,8 +30,8 @@ namespace RPiAqua.Libary
 
 			using (var connection = new HcSr04Connection(driver.Out(TRIGGERPIN), driver.In(ECHOPIN)))
 			{
-				while (!Console.KeyAvailable)
-				{
+				//while (!Console.KeyAvailable)
+				//{
 					try
 					{
 						var distance = connection.GetDistance().Centimeters;
@@ -44,7 +44,7 @@ namespace RPiAqua.Libary
 					}
 
 					Timer.Sleep(intervalValue);
-				}
+				//}
 			}
 
 			Console.CursorVisible = true;

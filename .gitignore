@@ -4,3 +4,5 @@ RPiAqua.Console/obj/
 RPiAqua.DB/obj/
 RPiAqua.Main/obj/
 RPiAqua.Libary/obj/
+RPiAqua.Main/bin/
+RPiAqua.DB/bin/

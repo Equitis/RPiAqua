@@ -32,20 +32,18 @@
   </PropertyGroup>
   <ItemGroup>
     <Reference Include="System" />
+    <Reference Include="RPiAqua.Libary">
+      <HintPath>..\RPiAqua.Libary\bin\Debug\RPiAqua.Libary.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Main.cs" />
     <Compile Include="AssemblyInfo.cs" />
   </ItemGroup>
-  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\RPiAqua.DB\RPiAqua.DB.csproj">
-      <Project>{23DA64DB-83FC-4EF1-A19B-A5D42E239BE3}</Project>
-      <Name>RPiAqua.DB</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\RPiAqua.Libary\RPiAqua.Libary.csproj">
-      <Project>{ED02343C-37A4-478C-B7B9-DCE82BFB8477}</Project>
-      <Name>RPiAqua.Libary</Name>
-    </ProjectReference>
+    <Content Include="script\test.sh">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </Content>
   </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
 </Project>

@@ -5,6 +5,7 @@ using System.Text;
 using Raspberry.IO.Components.Sensors.Pressure.Bmp085;
 using Raspberry.IO.InterIntegratedCircuit;
 using Raspberry.IO.GeneralPurpose;
+using UnitsNet;
 
 namespace RPiAqua.Libary
 {
@@ -31,7 +32,8 @@ namespace RPiAqua.Libary
 			Bmp085Data data = connection.GetData();
 			values.Add("Temp", data.Temperature.DegreesCelsius);
 			values.Add("Bar", data.Pressure.Bars * 1000);
-			values.Add("Meter", connection.GetAltitude(data.Pressure).Meters);
+			Pressure presure = Pressure.FromPascals(1013.25);
+			values.Add("Meter", connection.GetAltitude(presure).Meters);
 
 			return values;
 		}

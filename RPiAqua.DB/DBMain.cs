@@ -2,9 +2,9 @@ using System;
 
 namespace RPiAqua.DB
 {
-	public class MyClass
+	public class DBMain
 	{
-		public MyClass ()
+		public DBMain()
 		{
 		}
 	}
