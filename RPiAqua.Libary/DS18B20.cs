@@ -10,17 +10,21 @@ namespace RPiAqua.Libary
 	public class DS18B20
 	{
 		Ds18b20Connection connection = null;
-		public DS18B20()
+		private int _deviceID;
+		public DS18B20(int deviceID)
 		{
-			Ds18b20Connection ds = new Ds18b20Connection(0);
-			double temp =  ds.GetTemperature().DegreesCelsius;
-			Console.WriteLine("{0:0.000}", temp);
+			_deviceID = deviceID;
+			Init();
 		}
 
-		public StdResult Init()
+		private void Init()
 		{
-			StdResult result = StdResult.StdError;
-			return result;
+			this.connection = new Ds18b20Connection(_deviceID);
+		}
+
+		public double GetValue()
+		{
+			return this.connection.GetTemperature().DegreesCelsius;
 		}
 	}
 }

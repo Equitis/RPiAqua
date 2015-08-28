@@ -6,8 +6,11 @@ using Raspberry.IO.GeneralPurpose;
 
 namespace RPiAqua.Libary
 {
-	public class FanControl
+	public class FanControl : IDisposable
 	{
+		private const double MAXVALUE = 27.0;
+		private const double MINVALUE = 26.0;
+
 		GpioConnection connection = null;
 		ConnectorPin pin = ConnectorPin.P1Pin13;
 		OutputPinConfiguration output = ConnectorPin.P1Pin13.Output();
@@ -39,32 +42,59 @@ namespace RPiAqua.Libary
 			}
 		}
 
-		private bool disposing = true;
-
+		private bool disposed = false;
 		public void Dispose()
 		{
-			Dispose(disposing);
+			Dispose(true);
+			GC.SuppressFinalize(this);
 		}
 
-		private void Dispose(bool disposing)
+		protected virtual void Dispose(bool disposing)
 		{
-			if (disposing)
+			if (!disposed)
 			{
-				if (null != connection)
+				if (disposing)
 				{
-					connection[pin] = false;
-					connection.Clear();
+					// Free other state (managed objects).
+				}
+
+				if (output != null)
+				{
+					output = null;
+				}
+
+				if (connection != null && connection.IsOpened)
+				{
+					connection.Close();
 					connection = null;
 				}
-				output.Disable();
-				output = null;
+				disposed = true;
 			}
-
 		}
 
+		// Use C# destructor syntax for finalization code.
 		~FanControl()
 		{
-			Dispose(true);
+			// Simply call Dispose(false).
+			Dispose(false);
+		}
+
+		public bool Check(double temp)
+		{
+			bool bRet = false;
+			if (temp > MAXVALUE)
+			{
+				this.Start();
+				bRet = true;
+			}
+
+			if (temp < MINVALUE)
+			{
+				this.Stop();
+				bRet = false;
+			}
+
+			return bRet;
 		}
 	}
 }

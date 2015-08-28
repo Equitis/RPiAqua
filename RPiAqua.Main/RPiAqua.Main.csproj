@@ -9,10 +9,11 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <RootNamespace>RPiAqua.Main</RootNamespace>
     <AssemblyName>RPiAqua.Main</AssemblyName>
-    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <ProductVersion>10.0.0</ProductVersion>
     <SchemaVersion>2.0</SchemaVersion>
+    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <DebugSymbols>true</DebugSymbols>
@@ -43,6 +44,16 @@
   <ItemGroup>
     <Compile Include="RPiAqua.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\RPiAqua.DB\RPiAqua.DB.csproj">
+      <Project>{23da64db-83fc-4ef1-a19b-a5d42e239be3}</Project>
+      <Name>RPiAqua.DB</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\RPiAqua.Libary\RPiAqua.Libary.csproj">
+      <Project>{ed02343c-37a4-478c-b7b9-dce82bfb8477}</Project>
+      <Name>RPiAqua.Libary</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

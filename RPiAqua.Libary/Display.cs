@@ -74,6 +74,7 @@ namespace RPiAqua.Libary
 		public Display ()
 		{
 			driver = new I2cDriver(sdaPin.ToProcessor(), sclPin.ToProcessor());
+			//driver.ClockDivider = 400;
 			connection = driver.Connect(LCDADRESS);
 			//connection.WriteByte();
 			this.Write(0x03);

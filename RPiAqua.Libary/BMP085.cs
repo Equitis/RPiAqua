@@ -32,9 +32,8 @@ namespace RPiAqua.Libary
 			Bmp085Data data = connection.GetData();
 			values.Add("Temp", data.Temperature.DegreesCelsius);
 			values.Add("Bar", data.Pressure.Bars * 1000);
-			Pressure presure = Pressure.FromPascals(1013.25);
+			Pressure presure = Pressure.FromPascals((double)(101325 / 10));
 			values.Add("Meter", connection.GetAltitude(presure).Meters);
-
 			return values;
 		}
 	}
