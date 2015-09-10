@@ -1,0 +1,8 @@
+D:\Projekte\RPiAqua\RPiAqua.DBTests\bin\Debug\RPiAqua.DBTests.dll
+D:\Projekte\RPiAqua\RPiAqua.DBTests\bin\Debug\RPiAqua.DBTests.pdb
+D:\Projekte\RPiAqua\RPiAqua.DBTests\bin\Debug\RPiAqua.DB.dll
+D:\Projekte\RPiAqua\RPiAqua.DBTests\bin\Debug\RPiAqua.DB.pdb
+D:\Projekte\RPiAqua\RPiAqua.DBTests\obj\Debug\RPiAqua.DBTests.csprojResolveAssemblyReference.cache
+D:\Projekte\RPiAqua\RPiAqua.DBTests\obj\Debug\RPiAqua.DBTests.dll
+D:\Projekte\RPiAqua\RPiAqua.DBTests\obj\Debug\RPiAqua.DBTests.pdb
+D:\Projekte\RPiAqua\RPiAqua.DBTests\bin\Debug\MySql.Data.dll
